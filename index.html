@@ -15,8 +15,6 @@
     <header class="header">
 
         
-          
-
         <div class="flex-title">
             <div class="logo">
                 <img src="resources/cuLogoUAR.png" alt="Cu-logo" class="logo-image">
@@ -42,11 +40,29 @@
             </div>
 
 
-            <div class="nav-two">
-                <div class="humbuger-one"></div>
-                <div class="humbuger-two"></div>
-                <div class="humbuger-three"></div>
+            <div class="row" id="hambuger">
+                <button class="nav-toggle__btn">
+                    <span class="hambuger"></span>
+                </button>
             </div>
+
+        </div>
+
+        <div class="main-quick--links">
+            <h3 class="main-quick--links---text">Quick Links</h3>
+            <ul class="quick-nav--links">
+                <li class="quick-item"><a href="#" class="quick-item--link">Win a Soul</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Media</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Constitution</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Library</a></li>
+                <hr>
+                <li class="quick-item"><a href="#" class="quick-item--link">Financials</a></li>
+                <hr>
+            </ul>
+
         </div>
 
         <div class="intro-video--header">
@@ -60,11 +76,10 @@
                     <li class="quick-item"><a href="#" class="quick-item--link">Media</a></li>
                     <li class="quick-item"><a href="#" class="quick-item--link">Constitution</a></li>
                     <li class="quick-item"><a href="#" class="quick-item--link">Library</a></li>
-                    <li class="quick-item"><a href="#" class="quick-item--link">Finantials</a></li>
+                    <li class="quick-item"><a href="#" class="quick-item--link">Financials</a></li>
                 </ul>
             </div>
         </div>
-
 
     </header>
 
@@ -159,7 +174,18 @@
 
     </div>
 
+    <script>
+        const navBtn = document.querySelector(".nav-toggle__btn")
+
+        navBtn.addEventListener("click",()=>{
+            document.body.classList.toggle("nav-open")
+        })
+
+    </script>
+
 </body>
 
 
 </html>
+
+

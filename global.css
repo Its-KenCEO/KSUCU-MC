@@ -119,10 +119,11 @@ img{
 @media(min-width:600px){
     .header{
         /* border: 2px solid red; */
-        padding: 20px  100px 100px 100px ;
+        padding: 40px  100px 100px 100px ;
     }
     .logo{
         width: 100px;
+        align-self: center;
     }
     .nav{
         display: none;
@@ -131,17 +132,19 @@ img{
         display: none;
     }
    .title-text{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        letter-spacing: 3px;
    }
 
    .nav-one--hidden{
-    /* border:  2px solid red; */
-    padding: 10px;
+    padding: 5px;
     display: flex;
 
-    background-color:#ffffff47 ;
-    border-radius:20px ;
+    background-color:#ffffff47;
     justify-content: space-evenly;
    }
 
@@ -163,12 +166,12 @@ img{
 }
 
 @media (min-width:800px) {
-    .logo{
+    /* .logo{
         width: 200px;
-    }
-    .title-text{
+    } */
+    /* .title-text{
         font-size: 3rem;
         display: inline-block;
         margin-left:20px ;
-   }
+   } */
 }

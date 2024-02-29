@@ -1,3 +1,52 @@
+.nav-toggle__btn{
+    background: transparent;
+    padding: .8em .6em;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.hambuger{
+    display: block;
+    position: relative; 
+}
+
+.hambuger,
+.hambuger::before,
+.hambuger::after{
+    background-color: rgb(252, 252, 252);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.hambuger::before,
+.hambuger::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hambuger::before {
+     top: 8px; 
+}
+
+.hambuger::after {
+     bottom: 8px; 
+}
+
+.nav-open .hambuger{
+    transform: rotate(.625turn);
+}
+.nav-open .hambuger::after{
+    opacity: 0;
+}
+.nav-open .hambuger::before{
+   transform: rotate(90deg) translateX(-8px);
+}
+
 .video-intro{
     aspect-ratio: 16/9;
     margin: 20px  auto 0 auto;
@@ -10,6 +59,34 @@
 
 .main{
     padding: 20px;
+}
+
+.main-quick--links{
+    background: #dddddd;
+    margin: 10px -10px;
+
+    max-height: 0;
+    padding: 0;
+    overflow: hidden; 
+    transition:  0.5s ease; 
+}
+.nav-open .main-quick--links{
+    max-height: 1000px;
+    padding: 5px;
+}
+.main-quick--links---text{
+    color: #000;
+    text-align: center;
+}
+
+.quick-nav--links{
+    list-style: none;
+    margin: 0;
+}
+
+.quick-item--link{
+    text-decoration: none;
+    color: #000000;
 }
 
 .call-to-action-text{
@@ -92,7 +169,13 @@
     display: none;
 }
 
+
+
 @media(min-width:600px) {
+
+    .quick-links{
+        display: none;
+    }
 
     .intro-video--header{
         display: flex;
