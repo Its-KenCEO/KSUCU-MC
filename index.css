@@ -88,6 +88,9 @@
 .side-bar--links{
     display: none;
 }
+.products-splitter--hidden{
+    display: none;
+}
 
 @media(min-width:600px) {
 
@@ -111,6 +114,9 @@
         margin-top: 20px;
     }
 
+    .products-splitter--hidden{
+        display: block;
+    }
 
     .quick-item--link{
         display: inline-block ;

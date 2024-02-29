@@ -108,6 +108,9 @@ img{
     width: 50%;
     margin: 20px auto;
 }
+.social-link{
+    color: #fff;
+}
 
 .nav-one--hidden{
     display: none;
@@ -149,6 +152,13 @@ img{
         padding: 5px 30px;
     }
 
+    .hr{
+        
+        width: 20%;
+    }
+    .social--links{
+        width: 20%;
+    }
       
 }
 
